@@ -2,5 +2,6 @@
   "files.watcherExclude": {
     "**/node_modules/**": false,
     "**/node_modulesA/**": true
-  }
+  },
+  "git.ignoreLimitWarning": true
 }
