@@ -11,6 +11,19 @@
 
 <script>
 export default {
+  asyncData({ app }) {
+    const arr = app.sort([1, 6 ,7, 4, 9])
+    console.log(arr)
+
+    const arr2 = app.$integerSort([1, 6 ,7, 4, 9])
+    console.log(arr2)
+  },
+
+  mounted() {
+    const arr3 = this.$integerSort([1, 6 ,7, 4, 9])
+    console.log(arr3)
+  },
+
   data () {
     return {
       list: [

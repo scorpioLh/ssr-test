@@ -30,7 +30,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/vue-notifications',
+    '@/plugins/add-debug-info',
+    '@/plugins/sort-plugin'
   ],
   /*
   ** Nuxt.js modules
@@ -46,7 +49,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-    }
+    },
+    vendor: ['axios']
   },
 
   router: {
